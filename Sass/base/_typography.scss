@@ -3,10 +3,13 @@
 $font_logo_title: "Shrikhand";
 $font_text: "Roboto";
 
-h1 {
+h1, .menu h2 {
     font-family: $font_logo_title;
 }
 
+* {
+    font-family: $font_text;
+}
 a {
     text-decoration: none;
 }
