@@ -1,7 +1,10 @@
 // Colors
 
-$color-primary :#9356DC;
-$color-secondary :#FF79DA;
-$color-tertiary :#99E2D0;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-grey: #353535;
+$color-grey2: lighten($color-grey, 50%);
+$color-grey3: lighten($color-grey, 65%);
 
 // Images

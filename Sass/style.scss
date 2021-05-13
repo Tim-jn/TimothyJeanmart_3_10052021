@@ -1,5 +1,25 @@
 /* ./dart-sass/sass Sass/style.scss CSS/style.css --watch */
 
-@import "base/_typography.scss";
-@import "components/_buttons.scss";
-@import "utils/_variables.scss";
+// utils
+
+/* variables */ @import "utils/variables";
+/* fonctions */
+/* mixins */
+/* placeholders */
+
+// base
+
+@import "base/typography";
+@import "base/base";
+
+// components
+
+@import "components/buttons";
+
+// layout
+
+@import "layout/header";
+
+// pages
+
+
