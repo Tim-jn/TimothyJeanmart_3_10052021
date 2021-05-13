@@ -21,6 +21,9 @@ body {
   width: 100%;
   margin: 0;
 }
+body ol, body ul {
+  list-style: none;
+}
 
 .button {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -35,7 +38,7 @@ body {
 #header {
   width: 100%;
   display: flex;
-  box-shadow: 0 0 0.5rem #afafaf;
+  box-shadow: 0 0 0.4rem #b7b7b7;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -51,6 +54,7 @@ body {
   justify-content: center;
   background-color: #eaeaea;
   font-weight: normal;
+  color: #353535;
 }
 #position i {
   padding-right: 1rem;
@@ -76,6 +80,25 @@ body {
 #discover p {
   font-size: 1.06rem;
   margin: 1rem 0 2rem 0;
+  color: #353535;
+}
+
+#list {
+  margin: 0 1rem;
+}
+#list .list__items {
+  display: flex;
+}
+#list .numbers {
+  background-color: #9356DC;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  border-radius: 100%;
+  align-items: left;
+}
+#list i {
+  justify-content: center;
+  padding: 0 1rem;
 }
 
 img {
