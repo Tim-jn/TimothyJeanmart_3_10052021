@@ -1,0 +1,46 @@
+// position section
+
+#position {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: $color-grey2;
+    font-weight: normal;
+
+    i {
+        padding-right: 1rem;
+    }
+
+    h3 {
+        margin: 0.85rem 0 0.85rem 0;
+        font-size: 1rem;
+    }
+}
+
+// discover section
+
+#discover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    text-align: center;
+    background-color: $color-grey3;
+    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+
+    h2 {
+        margin: 0;
+        font-size: $size-h2;
+    }
+
+    p {
+        font-size: $size-p;
+        margin: 1rem 0 2rem 0;
+    }
+}
+
+// main section
+
+img { 
+    max-width: 335px;
+}

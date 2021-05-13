@@ -4,7 +4,12 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-grey: #353535;
-$color-grey2: lighten($color-grey, 50%);
-$color-grey3: lighten($color-grey, 65%);
+$color-grey2: lighten($color-grey, 71%);
+$color-grey3: lighten($color-grey, 75.5%);
+
+// Font-size
+
+$size-h2: 1.54rem;
+$size-p: 1.06rem;
 
 // Images
