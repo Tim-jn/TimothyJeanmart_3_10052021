@@ -41,28 +41,45 @@
     }
 }
 
-// main section
+// list section
 
 #list {
     margin: $margin-default;
 
-    .list__items {
+    .list_items {
         display: flex;
+        flex-direction: column;
+    }
+
+    .list_items_element {
+        margin: 2.3rem 0;
+    }
+
+    .list_items_txt {
+        background-color: $color-grey3;
+        padding: 1.7rem;
+        border-radius: 1.5rem;
+        box-shadow: 0.1rem 0.25rem 0.4rem darken($color-grey2, 7);
+        font-weight: bold;
     }
 
     .numbers {
         background-color: $color-primary;
-        min-height: 1.5rem;
-        min-width: 1.5rem;
         border-radius: 100%;
-        align-items: left;
+        margin-right: -0.8rem;
+        position: relative;
+        color: #fff;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.9rem;
     }
 
     i {
-        justify-content: center;
-        padding: 0 1rem;
+        color: #7e7e7e;
+        padding: 0 0.5rem;
     }
 }
+
+// main section 
 
 img { 
     max-width: 335px;

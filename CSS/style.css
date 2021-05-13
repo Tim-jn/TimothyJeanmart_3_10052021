@@ -32,7 +32,7 @@ body ol, body ul {
   border: none;
   border-radius: 3rem;
   font-size: 1rem;
-  box-shadow: 0.1rem 0.25rem 0.4rem #b7b7b7;
+  box-shadow: 0.1rem 0.25rem 0.4rem #c3c3c3;
 }
 
 #header {
@@ -86,19 +86,32 @@ body ol, body ul {
 #list {
   margin: 0 1rem;
 }
-#list .list__items {
+#list .list_items {
   display: flex;
+  flex-direction: column;
+}
+#list .list_items_element {
+  margin: 2.3rem 0;
+}
+#list .list_items_txt {
+  background-color: #f6f6f6;
+  padding: 1.7rem;
+  border-radius: 1.5rem;
+  box-shadow: 0.1rem 0.25rem 0.4rem #d8d8d8;
+  font-weight: bold;
 }
 #list .numbers {
   background-color: #9356DC;
-  min-height: 1.5rem;
-  min-width: 1.5rem;
   border-radius: 100%;
-  align-items: left;
+  margin-right: -0.8rem;
+  position: relative;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
 }
 #list i {
-  justify-content: center;
-  padding: 0 1rem;
+  color: #7e7e7e;
+  padding: 0 0.5rem;
 }
 
 img {
