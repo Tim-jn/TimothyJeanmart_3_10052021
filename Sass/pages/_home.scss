@@ -118,6 +118,7 @@
 
     .heart_empty {
         position: relative;
+        color: darken($color-grey2, 40);
     }
 
     .heart_full {
@@ -125,8 +126,10 @@
         top: 0;
         left: 0;
         opacity: 0;
-        background: linear-gradient($color-primary, $color-secondary);
-        content: "";
+        transition: opacity 0.35s;
+        background-image: linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         &:hover {
             opacity: 1;
