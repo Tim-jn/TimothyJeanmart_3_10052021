@@ -36,6 +36,47 @@ body ol, body ul {
   cursor: pointer;
 }
 
+.heart_empty {
+  position: relative;
+  color: #7d7d7d;
+}
+
+.heart_full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.35s;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart_full:hover {
+  opacity: 1;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 35px;
+  margin-top: -4rem;
+  z-index: 2;
+  position: relative;
+  padding: 0.8rem 1.2rem 3.5rem 1.2rem;
+}
+.menu .title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+.menu .title i {
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
 #header {
   width: 100%;
   display: flex;
@@ -44,9 +85,41 @@ body ol, body ul {
   justify-content: center;
   position: relative;
 }
+#header .arrow {
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  font-size: 1.2rem;
+  color: #353535;
+}
 #header h1 {
   margin: 0.7rem 0 0.3rem 0;
   font-size: 1.9rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.2rem;
+  background-color: #353535;
+  height: 195px;
+}
+#footer h3 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+#footer > *, #footer a {
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+#footer > * li, #footer a li {
+  margin-bottom: 0.5rem;
+}
+#footer > * li i, #footer a li i {
+  max-width: 6px;
+  margin-right: 1rem;
 }
 
 #position {
@@ -148,24 +221,6 @@ body ol, body ul {
 .main__txt h3, .main__txt p {
   margin: 0.2rem 0.8rem;
 }
-.main .heart_empty {
-  position: relative;
-  color: #7d7d7d;
-}
-.main .heart_full {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.35s;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.main .heart_full:hover {
-  opacity: 1;
-}
 
 .article {
   box-shadow: 0.1rem 0.25rem 0.4rem #c3c3c3;
@@ -184,31 +239,6 @@ body ol, body ul {
   padding: 0.4rem 0.6rem;
   border-radius: 2px;
   font-size: 0.9rem;
-}
-
-#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 1.2rem;
-  background-color: #353535;
-  height: 195px;
-}
-#footer h3 {
-  font-weight: normal;
-  margin-bottom: 1rem;
-}
-#footer > *, #footer a {
-  color: #FFF;
-  padding: 0;
-  margin: 0;
-}
-#footer > * li, #footer a li {
-  margin-bottom: 0.5rem;
-}
-#footer > * li i, #footer a li i {
-  max-width: 6px;
-  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
