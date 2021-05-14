@@ -4,7 +4,7 @@
 /* mixins */
 /* placeholders */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-h1, .menu h2 {
+h1, .menu h2, #footer h3 {
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -33,6 +33,7 @@ body ol, body ul {
   border-radius: 3rem;
   font-size: 1rem;
   box-shadow: 0.1rem 0.25rem 0.4rem #c3c3c3;
+  cursor: pointer;
 }
 
 #header {
@@ -111,7 +112,8 @@ body ol, body ul {
 }
 #list .list_txt i {
   color: #7e7e7e;
-  padding-right: 1.2rem;
+  max-width: 0;
+  margin-right: 2.3rem;
 }
 #list .list_txt--purple {
   background-color: #f2eafb;
@@ -124,17 +126,24 @@ body ol, body ul {
   padding: 2.1rem 1.2rem;
   background-color: #f6f6f6;
 }
+.main img {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 175px;
+  object-fit: cover;
+}
 .main__img {
   position: relative;
 }
 .main_bloc_txt {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  margin: 0.6rem 0 0.8rem 0;
 }
 .main_bloc_txt i {
   font-size: 1.5rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 .main__txt h3, .main__txt p {
   margin: 0.2rem 0.8rem;
@@ -177,11 +186,29 @@ body ol, body ul {
   font-size: 0.9rem;
 }
 
-img {
-  max-width: 100%;
-  min-width: 100%;
-  max-height: 175px;
-  object-fit: cover;
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.2rem;
+  background-color: #353535;
+  height: 195px;
+}
+#footer h3 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+#footer > *, #footer a {
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+#footer > * li, #footer a li {
+  margin-bottom: 0.5rem;
+}
+#footer > * li i, #footer a li i {
+  max-width: 6px;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
