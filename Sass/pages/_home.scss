@@ -51,11 +51,11 @@
         flex-direction: column;
     }
 
-    .list_items_element {
+    .list_items_card {
         margin: 2.3rem 0;
     }
 
-    .list_items_txt {
+    .list_txt {
         background-color: $color-grey3;
         padding: 1.7rem;
         border-radius: 1.5rem;
@@ -63,7 +63,7 @@
         font-weight: bold;
     }
 
-    .numbers {
+    .list_numbers {
         background-color: $color-primary;
         border-radius: 100%;
         margin-right: -0.8rem;

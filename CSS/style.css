@@ -90,17 +90,17 @@ body ol, body ul {
   display: flex;
   flex-direction: column;
 }
-#list .list_items_element {
+#list .list_items_card {
   margin: 2.3rem 0;
 }
-#list .list_items_txt {
+#list .list_txt {
   background-color: #f6f6f6;
   padding: 1.7rem;
   border-radius: 1.5rem;
   box-shadow: 0.1rem 0.25rem 0.4rem #d8d8d8;
   font-weight: bold;
 }
-#list .numbers {
+#list .list_numbers {
   background-color: #9356DC;
   border-radius: 100%;
   margin-right: -0.8rem;
