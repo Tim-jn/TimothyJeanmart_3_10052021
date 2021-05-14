@@ -45,22 +45,12 @@
 
 #list {
     padding: $padding-mobile;
-
-    .list_items {
-        display: flex;
-        flex-direction: column;
-    }
+    margin: 3rem 0 3.5rem 0;
 
     .list_items_card {
-        margin: 2.3rem 0;
-    }
-
-    .list_txt {
-        background-color: $color-grey3;
-        padding: 1.7rem;
-        border-radius: 1.5rem;
-        box-shadow: 0.1rem 0.25rem 0.4rem darken($color-grey2, 7);
-        font-weight: bold;
+        display: flex;
+        align-items: baseline;
+        margin: 1.5rem 0;
     }
 
     .list_numbers {
@@ -73,16 +63,35 @@
         font-size: 0.9rem;
     }
 
-    i {
-        color: #7e7e7e;
-        padding: 0 0.5rem;
+    .list_txt {
+        background-color: $color-grey3;
+        padding: 1.7rem;
+        border-radius: 1.5rem;
+        box-shadow: 0.1rem 0.25rem 0.4rem darken($color-grey2, 7);
+        font-weight: bold;
+        width: 100%;
+
+        i {
+            color: #7e7e7e;
+            padding-right: 1.2rem;
+        }
+
+        &--purple {
+            background-color: lighten($color-primary, 35);
+
+            i {
+                color: $color-primary;
+            }
+        }
     }
+
+    
 }
 
 // main section 
 
 .main {
-    padding: $padding-mobile;
+    padding: 2.1rem 1.2rem;
     background-color: $color-grey3;
 
     &__img {
@@ -90,9 +99,38 @@
         
     }
 
-    &__txt {
+    &_bloc_txt {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+
+        i {
+            font-size: 1.5rem;
+            margin-right: 1rem;    
+        }
+    }
+
+    &__txt {
+        h3, p {
+            margin: 0.2rem 0.8rem;
+        }
+    }
+
+    .heart_empty {
+        position: relative;
+    }
+
+    .heart_full {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: linear-gradient($color-primary, $color-secondary);
+        content: "";
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -105,7 +143,7 @@
 
 .img__txt {
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     background-color: $color-tertiary;
     color: darken($color-tertiary, 42);
     font-weight: 500;
