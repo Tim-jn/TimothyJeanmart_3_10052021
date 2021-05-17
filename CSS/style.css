@@ -35,10 +35,13 @@ body ol, body ul {
   box-shadow: 0.1rem 0.25rem 0.4rem #c3c3c3;
   cursor: pointer;
 }
+.button:hover {
+  opacity: 0.9;
+}
 
 .heart_empty {
   position: relative;
-  color: #7d7d7d;
+  color: #848484;
 }
 
 .heart_full {
@@ -55,9 +58,15 @@ body ol, body ul {
   opacity: 1;
 }
 
+img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
 .menu {
   background-color: #f6f6f6;
-  border-radius: 35px;
+  border-radius: 38px;
   margin-top: -4rem;
   z-index: 2;
   position: relative;
@@ -73,13 +82,36 @@ body ol, body ul {
 .menu .title i {
   font-size: 1.5rem;
 }
+.menu .button {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  width: 185px;
+}
+.menu .submenu h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2.5rem 0 1.5rem 0;
+  position: relative;
+}
+.menu .submenu h3::after {
+  content: "";
+  width: 2.5rem;
+  height: 0.18rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.menu .submenu .nomargintop {
+  margin-top: 0;
+}
 .menu .submenu .item {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0.1rem 0.25rem 0.4rem #e3e3e3;
-  position: relative;
+  box-shadow: 0.1rem 0.25rem 0.4rem #eaeaea;
   margin-bottom: 1rem;
 }
 .menu .submenu .item h4 {
@@ -90,26 +122,22 @@ body ol, body ul {
   font-size: 0.96rem;
   margin: 0 0 0.7rem 0.7rem;
 }
-.menu .submenu .item h4, .menu .submenu .item p {
-  text-overflow: ellipsis;
+.menu .submenu .item__txt {
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .submenu .item__price {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 0;
+  margin-right: 1.3rem;
+  display: flex;
+  align-items: flex-end;
   font-weight: bold;
-}
-
-img {
-  width: 100%;
 }
 
 #header {
   width: 100%;
   display: flex;
-  box-shadow: 0 0 0.4rem #b0b0b0;
+  box-shadow: 0 0 0.4rem #b7b7b7;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -155,16 +183,20 @@ img {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  background-color: #e3e3e3;
+  background-color: #eaeaea;
+}
+#position input {
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 #position_search {
   background-color: transparent;
   border: none;
   height: 48px;
-  width: 130px;
+  width: 122px;
 }
 #position i {
-  padding-right: 1rem;
+  padding-right: 0.7rem;
 }
 
 #discover {
@@ -208,7 +240,7 @@ img {
   background-color: #f6f6f6;
   padding: 1.7rem;
   border-radius: 1.5rem;
-  box-shadow: 0.1rem 0.25rem 0.4rem #d1d1d1;
+  box-shadow: 0.1rem 0.25rem 0.4rem #d8d8d8;
   font-weight: bold;
   width: 100%;
 }

@@ -6,15 +6,20 @@
     justify-content: center;
     background-color: $color-grey2;
 
+    input {
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
     &_search {
         background-color: transparent;
         border: none;
         height: 48px;
-        width: 130px;
+        width: 122px;
     }
 
     i {
-        padding-right: 1rem;
+        padding-right: 0.7rem;
     }
 }
 
