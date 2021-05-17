@@ -68,9 +68,38 @@ body ol, body ul {
   align-items: baseline;
   justify-content: space-between;
   margin-right: 1rem;
+  font-size: 1.15rem;
 }
 .menu .title i {
   font-size: 1.5rem;
+}
+.menu .submenu .item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0.1rem 0.25rem 0.4rem #e3e3e3;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.menu .submenu .item h4 {
+  font-size: 1.1rem;
+  margin: 0.7rem 0 0.3rem 0.7rem;
+}
+.menu .submenu .item p {
+  font-size: 0.96rem;
+  margin: 0 0 0.7rem 0.7rem;
+}
+.menu .submenu .item h4, .menu .submenu .item p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu .submenu .item__price {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  font-weight: bold;
 }
 
 img {
@@ -127,15 +156,15 @@ img {
   align-items: baseline;
   justify-content: center;
   background-color: #e3e3e3;
-  font-weight: normal;
-  color: #353535;
+}
+#position_search {
+  background-color: transparent;
+  border: none;
+  height: 48px;
+  width: 130px;
 }
 #position i {
   padding-right: 1rem;
-}
-#position h3 {
-  margin: 0.85rem 0 0.85rem 0;
-  font-size: 1rem;
 }
 
 #discover {

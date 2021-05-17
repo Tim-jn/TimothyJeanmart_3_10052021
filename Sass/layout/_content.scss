@@ -37,11 +37,53 @@
         align-items: baseline;
         justify-content: space-between;
         margin-right: 1rem;
+        font-size: 1.15rem;
     
         i {
             font-size: 1.5rem;
         }
     }
+
+    .submenu {
+        
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0.1rem 0.25rem 0.4rem $color-grey2;
+            position: relative;
+            margin-bottom: 1rem;
+            
+            h4 {
+                font-size: 1.1rem;
+                margin: 0.7rem 0 0.3rem 0.7rem;
+            }
+
+            p {
+                font-size: 0.96rem;
+                margin: 0 0 0.7rem 0.7rem;
+            }
+
+            h4, p {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            &__price {
+                position: absolute;
+                right: 1.5rem;
+                bottom: 0;
+                font-weight: bold;
+            }
+        }
+       
+
+    }
+
+
 } 
 
 img {
