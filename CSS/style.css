@@ -37,6 +37,7 @@ body ol, body ul {
 }
 .button:hover {
   opacity: 0.9;
+  box-shadow: 0.1rem 0.25rem 0.4rem #aaaaaa;
 }
 
 .heart_empty {
@@ -66,7 +67,7 @@ img {
 
 .menu {
   background-color: #f6f6f6;
-  border-radius: 38px;
+  border-radius: 38px 38px 0 0;
   margin-top: -4rem;
   z-index: 2;
   position: relative;

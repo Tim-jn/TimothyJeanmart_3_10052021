@@ -10,5 +10,6 @@
 
     &:hover {
         opacity: 0.9;
+        box-shadow: 0.1rem 0.25rem 0.4rem darken($color-grey3, 30);
     }
 }
