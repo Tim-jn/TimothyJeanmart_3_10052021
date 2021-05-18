@@ -128,6 +128,7 @@ img {
 .menu .submenu .item h4 {
   font-size: 1.1rem;
   margin: 0.7rem 0 0.3rem 0.7rem;
+  font-weight: 500;
 }
 .menu .submenu .item p {
   font-size: 0.96rem;
@@ -138,6 +139,9 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.menu .submenu .item__txt p {
+  font-weight: 300;
 }
 .menu .submenu .item__price {
   margin-right: 1.3rem;
