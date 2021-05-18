@@ -1,9 +1,17 @@
 /* ./dart-sass/sass Sass/style.scss CSS/style.css --watch */
-/* variables */
-/* fonctions */
-/* mixins */
-/* placeholders */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@keyframes slide-item {
+  0% {
+    margin-top: 27px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h1, .menu h2, #footer h3 {
   font-family: "Shrikhand", sans-serif;
 }
@@ -115,6 +123,7 @@ img {
   margin-bottom: 1rem;
   cursor: pointer;
   overflow: hidden;
+  animation: slide-item 1.5s ease-out;
 }
 .menu .submenu .item h4 {
   font-size: 1.1rem;
@@ -145,7 +154,6 @@ img {
   justify-content: center;
   width: 60px;
   min-height: 100%;
-  border-radius: 0 15px 15px 0;
   font-size: 1.3rem;
 }
 .menu .submenu .item__animation i {
