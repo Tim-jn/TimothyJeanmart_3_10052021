@@ -1,4 +1,4 @@
-// Shared layout
+// Shared layout //
 
 // shared heart animation 
 
@@ -82,11 +82,12 @@ img {
 
         .item {
             display: flex;
-            justify-content: space-between;
             background-color: #fff;
             border-radius: 15px;
             box-shadow: 0.1rem 0.25rem 0.4rem $color-grey2;
             margin-bottom: 1rem;
+            cursor: pointer;
+            overflow: hidden;
             
             h4 {
                 font-size: 1.1rem;
@@ -99,6 +100,7 @@ img {
             }
 
             &__txt {
+                flex: 1;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -110,6 +112,36 @@ img {
                 align-items: flex-end;
                 font-weight: bold;
             }
+
+            &__animation {
+                margin-right:-60px;
+                background-color: $color-tertiary;
+                color: #fff;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 60px;
+                min-height: 100%;
+                border-radius: 0 15px 15px 0;
+                font-size: 1.3rem;
+
+                i {
+                    transform: rotate(-360deg);
+                }           
+            }
+        
+            &:hover {
+
+                .item__animation {
+                    margin-right:0;
+                    transition: 0.4s ease-out;
+                }
+
+                i {
+                    transform: rotate(0deg);
+                    transition: 0.4s ease-out; 
+                }
+            } 
         }
     }
 } 

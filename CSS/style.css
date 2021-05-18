@@ -109,11 +109,12 @@ img {
 }
 .menu .submenu .item {
   display: flex;
-  justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0.1rem 0.25rem 0.4rem #eaeaea;
   margin-bottom: 1rem;
+  cursor: pointer;
+  overflow: hidden;
 }
 .menu .submenu .item h4 {
   font-size: 1.1rem;
@@ -124,6 +125,7 @@ img {
   margin: 0 0 0.7rem 0.7rem;
 }
 .menu .submenu .item__txt {
+  flex: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -133,6 +135,29 @@ img {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
+}
+.menu .submenu .item__animation {
+  margin-right: -60px;
+  background-color: #99E2D0;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  min-height: 100%;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.3rem;
+}
+.menu .submenu .item__animation i {
+  transform: rotate(-360deg);
+}
+.menu .submenu .item:hover .item__animation {
+  margin-right: 0;
+  transition: 0.4s ease-out;
+}
+.menu .submenu .item:hover i {
+  transform: rotate(0deg);
+  transition: 0.4s ease-out;
 }
 
 #header {
