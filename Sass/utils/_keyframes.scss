@@ -1,10 +1,12 @@
+// Items slide on restaurant pages
+
 @keyframes slide-item {
     0% {
         margin-top: 27px;
         opacity: 0;
     }
 
-    50% {
+    40% {
         opacity: 0.8;
     }
 
