@@ -88,7 +88,7 @@ img {
             margin-bottom: 1rem;
             cursor: pointer;
             overflow: hidden;
-            animation: slide-item 1.3s .3s ease-out both;
+            animation: slide-item 1.3s .3s ease-in-out both;
             
             h4 {
                 font-size: 1.1rem;
