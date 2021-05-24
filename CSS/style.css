@@ -54,6 +54,8 @@ body ol, body ul {
   font-size: 1rem;
   box-shadow: 0.1rem 0.25rem 0.4rem #c3c3c3;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button:hover {
   opacity: 0.9;
@@ -256,6 +258,14 @@ img {
   margin-right: 1rem;
 }
 
+.discover-list, .main {
+  max-width: 1440px;
+  margin: auto;
+}
+.discover-list .main, .main .main {
+  background-size: 100%;
+}
+
 #position {
   display: flex;
   align-items: baseline;
@@ -377,6 +387,42 @@ img {
   padding: 0.4rem 0.6rem;
   border-radius: 2px;
   font-size: 0.9rem;
+}
+
+@media all and (min-width: 768px) {
+  .discover-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .discover-list #discover {
+    width: 30%;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .discover-list #list {
+    width: 40%;
+  }
+
+  .main {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .main_no_title {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .main_no_title .article {
+    max-width: 600px;
+    min-width: 335px;
+    width: 40%;
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
