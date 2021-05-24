@@ -1,3 +1,30 @@
+// loader 
+
+@keyframes gradient {
+    0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
 // Items slide on restaurant pages
 
 @keyframes slide-item {
@@ -15,16 +42,4 @@
     }
 }
 
-// loader 
 
-@keyframes gradient {
-    0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }

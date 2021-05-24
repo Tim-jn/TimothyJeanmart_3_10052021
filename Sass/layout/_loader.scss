@@ -1,18 +1,22 @@
 .loader_bg {
     background-color: #fff;
+    position : fixed;
+    animation: loader .01s 1.5s both;
+    z-index: 9999;
+    height : 100%;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .loader {
-    padding: 1rem;
+    font-family: $font_logo_title;
+    font-size: 2.5rem;
     background: linear-gradient(-45deg, #9356DC, #FF79DA, #99E2D0,  #9356DC, #FF79DA, #99E2D0); 
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     animation: gradient 2.5s ease-in-out infinite;
     background-size: 400% 400%;
   }
-
-  /* 
-<section class="loader_bg">
-  <span class="loader">OHMYFOOD.</span>
-</section> 
-*/
