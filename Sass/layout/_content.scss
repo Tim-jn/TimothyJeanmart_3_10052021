@@ -14,8 +14,9 @@
     opacity: 0;
     transition: opacity 0.35s;
     background-image: linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 
     &:hover {
         opacity: 1;
@@ -103,12 +104,18 @@ img {
 
             &__txt {
                 flex: 1;
-                white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                white-space: nowrap;
 
                 p {
                     font-weight: 300;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                h4 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
 
