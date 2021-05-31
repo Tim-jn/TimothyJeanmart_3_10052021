@@ -1,0 +1,21 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "css:dev": "sass Sass/style.scss CSS/style.css --watch",
+    "css:prod": "sass Sass/style.scss CSS/style.css --style=compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tim-jn/ohmyfood.git"
+  },
+  "author": "Tim-jn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tim-jn/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Tim-jn/ohmyfood#readme"
+}
