@@ -1,7 +1,7 @@
 # OHMYFOOD
 
 ## Intitulé du projet 
-Dynamisez une page web avec des animations CSS.
+Dynamisez une page web avec des animations CSS
 
 ## [Live demo](https://timjn-ohmyfood.netlify.app/)
 
